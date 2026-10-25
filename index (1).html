@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0d14">
+  <meta name="description" content="Neeraj Works builds thoughtful Android apps and digital experiences. Explore our apps and projects.">
+  <title>Neeraj Works — Apps made with purpose</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090c12;--panel:#111722;--panel2:#151d2a;--text:#f4f7fb;--muted:#a6b0c0;--line:rgba(255,255,255,.1);--accent:#8b7cff;--accent2:#45d6c8}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,rgba(98,77,225,.16),transparent 38%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.04em}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#080b12;font-size:20px;font-weight:900}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover,.textlink:hover{color:#fff}
+    .hero{padding:100px 0 84px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:#c5c9ff;font-size:13px;background:rgba(255,255,255,.03)}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent2);box-shadow:0 0 15px var(--accent2)}h1{font-size:clamp(44px,6.2vw,76px);line-height:1.04;letter-spacing:-.055em;margin:24px 0 20px;max-width:700px}h1 span{background:linear-gradient(100deg,#b9b0ff,#72e8df);background-clip:text;-webkit-background-clip:text;color:transparent}.lead{font-size:18px;color:var(--muted);max-width:590px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:12px;font-weight:700;border:1px solid var(--line);transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(100deg,#9b8bff,#63ddd1);color:#091018;border:0}.secondary{background:rgba(255,255,255,.04)}
+    .heroart{position:relative;min-height:350px;display:grid;place-items:center}.glow{position:absolute;width:270px;height:270px;border-radius:50%;background:linear-gradient(135deg,rgba(139,124,255,.65),rgba(69,214,200,.5));filter:blur(55px);opacity:.55}.mock{position:relative;width:220px;height:320px;border:1px solid rgba(255,255,255,.25);border-radius:30px;background:linear-gradient(145deg,#1c2340,#101720 65%);padding:15px;box-shadow:0 35px 100px #0008;transform:rotate(7deg)}.mocktop{display:flex;justify-content:space-between;font-size:10px;color:#d9e0ff}.wallpaper{height:245px;margin-top:15px;border-radius:20px;background:radial-gradient(circle at 30% 25%,#ffe7ad 0 4%,transparent 20%),radial-gradient(ellipse at 70% 65%,#ff7199,transparent 35%),linear-gradient(145deg,#5145c5,#171b42 50%,#1ac6b8);position:relative;overflow:hidden}.wallpaper:before,.wallpaper:after{content:"";position:absolute;border:1px solid #ffffff70;border-radius:50%;width:180px;height:250px;transform:rotate(35deg);left:25px;top:20px}.wallpaper:after{width:120px;height:210px;left:50px;top:45px;border-color:#ffffff9c}
+    section{padding:72px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:28px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.17em;color:var(--accent2);font-weight:800}h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.04em;line-height:1.15;margin:9px 0}.sub{color:var(--muted);max-width:600px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:20px;padding:23px;min-height:240px;display:flex;flex-direction:column}.appicon{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#7c6bff,#40d8c7);color:#0b1118;font-size:25px;font-weight:900;margin-bottom:18px}.card h3{font-size:20px;margin:0 0 7px}.card p{color:var(--muted);margin:0 0 20px;font-size:14px}.card .textlink{margin-top:auto;color:#c3bcff;font-size:14px;font-weight:700}.tag{align-self:flex-start;border:1px solid var(--line);border-radius:999px;padding:4px 9px;color:var(--muted);font-size:11px;margin-bottom:12px}
+    .aboutbox{display:grid;grid-template-columns:1fr 1fr;gap:28px;background:var(--panel);border:1px solid var(--line);padding:32px;border-radius:24px}.aboutbox p{color:var(--muted);margin-bottom:0}.values{display:grid;gap:12px}.value{display:flex;gap:12px;align-items:flex-start;padding:13px;border:1px solid var(--line);border-radius:14px;background:#ffffff04}.check{color:var(--accent2);font-weight:900}
+    .contact{background:linear-gradient(120deg,rgba(139,124,255,.14),rgba(69,214,200,.08));border:1px solid var(--line);border-radius:24px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact p{color:var(--muted);margin:8px 0 0}.footer{padding:28px 0 38px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.smallnote{font-size:12px;color:#7f8999;margin-top:18px}
+    .screenshots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.shot{margin:0;padding:12px;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden}.shot img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;object-position:top center;border-radius:12px;background:#080b12}.shot figcaption{font-size:13px;color:var(--muted);padding:12px 3px 2px}.contactlinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}.contactlinks a{color:#c3bcff;font-weight:700}.appidentity{display:flex;gap:14px;align-items:center;margin-bottom:16px}.appidentity img{width:64px;height:64px;border-radius:17px;border:1px solid var(--line)}
+    @media(max-width:760px){.nav{height:auto;padding:18px 0;align-items:flex-start}.navlinks{gap:12px;flex-wrap:wrap;justify-content:flex-end;font-size:12px}.hero{grid-template-columns:1fr;padding:70px 0 45px;gap:15px}.heroart{min-height:300px}.mock{transform:rotate(4deg) scale(.9)}section{padding:52px 0}.grid{grid-template-columns:1fr}.screenshots{grid-template-columns:1fr 1fr}.sectionhead{align-items:flex-start;flex-direction:column}.aboutbox{grid-template-columns:1fr;padding:23px}.contact{padding:25px;align-items:flex-start;flex-direction:column}.wrap{width:min(100% - 30px,1120px)}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home" aria-label="Neeraj Works home"><span class="logo">N</span><span>NEERAJ WORKS</span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#apps">Apps & Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Independent app studio</div>
+        <h1>Apps made<br>with <span>purpose.</span></h1>
+        <p class="lead">Neeraj Works creates thoughtful Android apps and digital experiences designed to be useful, enjoyable, and easy to use.</p>
+        <div class="actions"><a class="btn primary" href="#apps">Explore my apps <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#about">Meet Neeraj Works</a></div>
+      </div>
+      <div class="heroart" aria-hidden="true"><div class="glow"></div><div class="mock"><div class="mocktop"><span>9:41</span><span>● ● ▰</span></div><div class="wallpaper"></div></div></div>
+    </div>
+    <section id="apps">
+      <div class="wrap">
+        <div class="sectionhead"><div><div class="kicker">Selected work</div><h2>Apps & projects</h2><p class="sub">Explore what's available today and discover projects as they grow.</p></div></div>
+        <div class="grid">
+          <article class="card">
+            <div class="appidentity"><img src="https://play-lh.googleusercontent.com/yNcB4v-edZnMaEzy5JcFEo4ThRs5kMVZo5pdWdKcC9lbmd8U_Pa4JhajN4mouX2Mp4Tbb_p3QOGmwO2HV1Cp0iM%3Dw240-h480" alt="Wallpaper/s app icon"><div><span class="tag">Available on Google Play</span><h3>Wallpaper/s</h3></div></div>
+            <p>Bring your phone to life with a collection of wallpapers, including abstract and gradient-inspired designs.</p>
+            <a class="textlink" href="https://play.google.com/store/apps/details?id=com.neerajworks.wallpaper" target="_blank" rel="noopener noreferrer">Get it on Google Play ↗</a>
+          </article>
+          <article class="card">
+            <div class="appicon" aria-hidden="true">♫</div><span class="tag">In development</span>
+            <h3>Amrit Mala</h3>
+            <p>A devotional music project focused on making bhajans and spiritual listening accessible in a simple experience.</p>
+            <span class="textlink">Coming soon</span>
+          </article>
+          <article class="card">
+            <div class="appicon" aria-hidden="true">✧</div><span class="tag">More to come</span>
+            <h3>Future projects</h3>
+            <p>New app ideas and experiments will be added here as they become ready to share.</p>
+            <a class="textlink" href="#contact">Follow the journey ↓</a>
+          </article>
+        </div>
+        <div style="margin-top:42px">
+          <div class="sectionhead"><div><div class="kicker">Inside the app</div><h2>See Wallpaper/s in action</h2><p class="sub">Real screenshots from the Google Play listing, showing browsing, previewing, and setting a wallpaper.</p></div></div>
+          <div class="screenshots">
+            <figure class="shot"><img loading="lazy" src="https://play-lh.googleusercontent.com/efbWaIKUNa0pdNVE45qalj3dDKT5zjz5NrdhgJ5ESibP89NC6CEBijBG8NAlKKDRguriFBQ6JQzzsKXiyPOzih4%3Dw526-h296" alt="Wallpaper/s gallery displaying a selection of wallpapers"><figcaption>Browse the wallpaper gallery</figcaption></figure>
+            <figure class="shot"><img loading="lazy" src="https://play-lh.googleusercontent.com/la7lGufVf9zYF_QWKBZhf8KDzLOKFYaEPqLseZ-Mmq9W9U37klmJVzCkoulDRqswKg8rOZkS3OTSl323_eiZ%3Dw526-h296" alt="Full-screen wallpaper preview with Save, Set Wallpaper, and Share controls"><figcaption>Preview, save, set, or share</figcaption></figure>
+            <figure class="shot"><img loading="lazy" src="https://play-lh.googleusercontent.com/oeqq_9sMUbvipqq4cCuWJ-NYT2F9xMsO8O9buv7cQu9KD3xqvw0-3DeFR3AihnxcZwphFXJvP2aVsawaFvsFwA%3Dw526-h296" alt="Set Wallpaper dialog with Home Screen, Lock Screen, and Both Screens options"><figcaption>Choose where to set your wallpaper</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrap">
+        <div class="sectionhead"><div><div class="kicker">Who we are</div><h2>Small studio. Useful ideas.</h2></div></div>
+        <div class="aboutbox">
+          <div><h3>Welcome to Neeraj Works.</h3><p>Neeraj Works is an independent creator brand building mobile apps and digital projects. The goal is straightforward: make experiences that look good, feel clear, and solve a real need.</p></div>
+          <div class="values">
+            <div class="value"><span class="check">✓</span><div><strong>Simple by design</strong><br><span style="color:var(--muted)">Clean interfaces that are easy to understand.</span></div></div>
+            <div class="value"><span class="check">✓</span><div><strong>Built to improve</strong><br><span style="color:var(--muted)">Projects evolve with feedback and testing.</span></div></div>
+            <div class="value"><span class="check">✓</span><div><strong>Made for people</strong><br><span style="color:var(--muted)">Practical features and thoughtful details.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrap contact">
+        <div><div class="kicker">Get in touch</div><h2>Have feedback or an idea?</h2><p>Questions about Wallpaper/s, app feedback, or collaboration? Reach out by email.</p><div class="contactlinks"><a href="mailto:neerajworkssupport@gmail.com">neerajworkssupport@gmail.com ↗</a><a href="https://play.google.com/store/apps/details?id=com.neerajworks.wallpaper" target="_blank" rel="noopener noreferrer">Wallpaper/s on Google Play ↗</a><a href="https://neerajworkssupport.github.io/wallpapers-privacy/" target="_blank" rel="noopener noreferrer">Privacy policy ↗</a></div></div>
+        <a class="btn primary" href="mailto:neerajworkssupport@gmail.com?subject=Neeraj%20Works%20website%20enquiry">Email Neeraj Works ↗</a>
+      </div>
+      <div class="wrap smallnote">For app support and business enquiries: neerajworkssupport@gmail.com</div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>© <span id="year">2026</span> Neeraj Works. All rights reserved.</span><span>Designed with care · Built for the web</span></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
